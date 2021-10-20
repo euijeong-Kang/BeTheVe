@@ -18,6 +18,7 @@ public class RestaurantService {
 
     public Restaurant saveRestaurant(@Valid Request request) {
         Restaurant newRestaurant = modelMapper.map(request, Restaurant.class);
+        newRestaurant.created();
         return restaurantRepository.save(newRestaurant);
     }
 

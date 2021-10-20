@@ -11,6 +11,10 @@ const router = new VueRouter({
       component: () => import('@/views/MainPage.vue'),
     },
     {
+      path: '/restaurants',
+      component: () => import('@/views/SearchPage.vue'),
+    },
+    {
       path: '*',
       component: () => import('@/views/NotFoundPage.vue'),
     },

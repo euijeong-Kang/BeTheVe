@@ -10,6 +10,6 @@ public class WebController {
 
     @GetMapping("/")
     public String main(){
-        return "static/index";
+        return "/static/index";
     }
 }
